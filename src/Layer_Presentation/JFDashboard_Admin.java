@@ -145,6 +145,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("DASHBOARD");
         setMinimumSize(new java.awt.Dimension(947, 510));
         setUndecorated(true);
         setResizable(false);
@@ -222,7 +223,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
         });
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/logo kgr white pink83x53.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/logo kgr white FM83x53.png"))); // NOI18N
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8_stutdown_25px.png"))); // NOI18N
         jLabel8.setToolTipText("Cerrar Sesión Actual");
@@ -1283,13 +1284,8 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
@@ -1324,12 +1320,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
     private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel34;
     private javax.swing.JPanel jPanel35;
-    private javax.swing.JPanel jPanel36;
-    private javax.swing.JPanel jPanel37;
     private javax.swing.JPanel jPanel38;
-    private javax.swing.JPanel jPanel39;
-    private javax.swing.JPanel jPanel40;
-    private javax.swing.JPanel jPanel41;
     private javax.swing.JPanel jPanel42;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel8;

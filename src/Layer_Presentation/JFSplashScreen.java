@@ -40,7 +40,7 @@ public class JFSplashScreen extends javax.swing.JFrame implements Runnable {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("UNADENIC");
+        setTitle("FAMILY MINISTERY");
         setUndecorated(true);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/HogaryFamilia800x594.png"))); // NOI18N
