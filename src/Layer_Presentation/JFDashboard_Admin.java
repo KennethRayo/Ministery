@@ -613,7 +613,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
 
         jPanel3.setBackground(new java.awt.Color(58, 50, 43));
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel3.setToolTipText("Academic Record");
+        jPanel3.setToolTipText("Couple");
 
         jLabel_Couple.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
         jLabel_Couple.setForeground(new java.awt.Color(255, 255, 255));
@@ -646,7 +646,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
 
         jPanel6.setBackground(new java.awt.Color(58, 50, 43));
         jPanel6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel6.setToolTipText("Coordinator");
+        jPanel6.setToolTipText("District");
 
         jLabel_District.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
         jLabel_District.setForeground(new java.awt.Color(255, 255, 255));
@@ -679,7 +679,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
 
         jPanel8.setBackground(new java.awt.Color(58, 50, 43));
         jPanel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel8.setToolTipText("Career");
+        jPanel8.setToolTipText("Church");
 
         jLabel_Church.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
         jLabel_Church.setForeground(new java.awt.Color(255, 255, 255));
@@ -712,7 +712,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
 
         jPanel10.setBackground(new java.awt.Color(58, 50, 43));
         jPanel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel10.setToolTipText("Level");
+        jPanel10.setToolTipText("Pastor");
 
         jLabel_Pastor.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
         jLabel_Pastor.setForeground(new java.awt.Color(255, 255, 255));
@@ -745,7 +745,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
 
         jPanel16.setBackground(new java.awt.Color(58, 50, 43));
         jPanel16.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel16.setToolTipText("Subject");
+        jPanel16.setToolTipText("Payment");
 
         jLabel_Payment.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
         jLabel_Payment.setForeground(new java.awt.Color(255, 255, 255));
@@ -778,7 +778,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
 
         jPanel23.setBackground(new java.awt.Color(58, 50, 43));
         jPanel23.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel23.setToolTipText("Personal Record");
+        jPanel23.setToolTipText("Inscribed");
 
         jLabel_Inscribed.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 18)); // NOI18N
         jLabel_Inscribed.setForeground(new java.awt.Color(255, 255, 255));

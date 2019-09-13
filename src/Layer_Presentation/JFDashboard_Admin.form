@@ -950,7 +950,7 @@
                     <BevelBorder/>
                   </Border>
                 </Property>
-                <Property name="toolTipText" type="java.lang.String" value="Academic Record"/>
+                <Property name="toolTipText" type="java.lang.String" value="Couple"/>
               </Properties>
 
               <Layout>
@@ -1013,7 +1013,7 @@
                     <BevelBorder/>
                   </Border>
                 </Property>
-                <Property name="toolTipText" type="java.lang.String" value="Coordinator"/>
+                <Property name="toolTipText" type="java.lang.String" value="District"/>
               </Properties>
 
               <Layout>
@@ -1076,7 +1076,7 @@
                     <BevelBorder/>
                   </Border>
                 </Property>
-                <Property name="toolTipText" type="java.lang.String" value="Career"/>
+                <Property name="toolTipText" type="java.lang.String" value="Church"/>
               </Properties>
 
               <Layout>
@@ -1139,7 +1139,7 @@
                     <BevelBorder/>
                   </Border>
                 </Property>
-                <Property name="toolTipText" type="java.lang.String" value="Level"/>
+                <Property name="toolTipText" type="java.lang.String" value="Pastor"/>
               </Properties>
 
               <Layout>
@@ -1202,7 +1202,7 @@
                     <BevelBorder/>
                   </Border>
                 </Property>
-                <Property name="toolTipText" type="java.lang.String" value="Subject"/>
+                <Property name="toolTipText" type="java.lang.String" value="Payment"/>
               </Properties>
 
               <Layout>
@@ -1265,7 +1265,7 @@
                     <BevelBorder/>
                   </Border>
                 </Property>
-                <Property name="toolTipText" type="java.lang.String" value="Personal Record"/>
+                <Property name="toolTipText" type="java.lang.String" value="Inscribed"/>
               </Properties>
 
               <Layout>
