@@ -1002,10 +1002,10 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
         jPanel_Dashboard_Statistics.setLayout(jPanel_Dashboard_StatisticsLayout);
         jPanel_Dashboard_StatisticsLayout.setHorizontalGroup(
             jPanel_Dashboard_StatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel_Dashboard_StatisticsLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_Dashboard_StatisticsLayout.createSequentialGroup()
+                .addContainerGap(160, Short.MAX_VALUE)
                 .addGroup(jPanel_Dashboard_StatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel_Dashboard_StatisticsLayout.createSequentialGroup()
-                        .addGap(132, 132, 132)
                         .addGroup(jPanel_Dashboard_StatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1022,7 +1022,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
                             .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel_Dashboard_StatisticsLayout.createSequentialGroup()
-                        .addGap(191, 191, 191)
+                        .addGap(41, 41, 41)
                         .addGroup(jPanel_Dashboard_StatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1034,7 +1034,7 @@ public class JFDashboard_Admin extends javax.swing.JFrame implements Printable {
                         .addGroup(jPanel_Dashboard_StatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addGap(159, 159, 159))
         );
         jPanel_Dashboard_StatisticsLayout.setVerticalGroup(
             jPanel_Dashboard_StatisticsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
