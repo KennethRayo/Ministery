@@ -382,22 +382,22 @@ public class JFManageChurch extends javax.swing.JFrame {
 
         if (row >=0 && numFS == 1)
         {
-//            JDChurch MD = new JDChurch (this, true);
-//            MD.jTextField_IDChurch.setText(String.valueOf(this.jTable_Church.getValueAt(row, 0)));
-//            MD.Actualizar = true;
-//            MD.ID = String.valueOf(this.jTable_Church.getValueAt(row, 0));
-//            //llenar los campos con los datos de la fila seleccionada
-//            this.jTextField_ID.setText(String.valueOf(this.jTable_Church.getValueAt(row, 0)));
-//            MD.jTextField_Name.setText(String.valueOf(this.jTable_Church.getValueAt(row, 1)));
-//            this.dispose();
-//            MD.setVisible(true);
-//            this.jTextField_Search.setText("");
-//            this.jTextField_ID.setText("");
+            JDChurch MD = new JDChurch (this, true);
+            MD.jTextField_IDChurch.setText(String.valueOf(this.jTable_Church.getValueAt(row, 0)));
+            MD.Actualizar = true;
+            MD.ID = String.valueOf(this.jTable_Church.getValueAt(row, 0));
+            //llenar los campos con los datos de la fila seleccionada
+            this.jTextField_ID.setText(String.valueOf(this.jTable_Church.getValueAt(row, 0)));
+            MD.jTextField_Name.setText(String.valueOf(this.jTable_Church.getValueAt(row, 1)));
+            this.dispose();
+            MD.setVisible(true);
+            this.jTextField_Search.setText("");
+            this.jTextField_ID.setText("");
             ListChurch();
         }
         else
         {
-            JOptionPane.showMessageDialog(null, "Select a row to continue !", "MF Control - Person", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Select a row to continue !", "MF Control - Church", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_jButton_UpdateActionPerformed
 

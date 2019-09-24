@@ -47,4 +47,9 @@ public class LB_Statistics {
         LD.DashboardData_Payment(jLabel);
     }
     
+    public void DashboardData_InscribedPastor(JLabel jLabel)
+    {
+        LD.DashboardData_InscribedPastor(jLabel);
+    }
+    
 }

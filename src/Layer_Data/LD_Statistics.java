@@ -59,7 +59,7 @@ public class LD_Statistics {
                 JOptionPane.showMessageDialog(null, 
                         "Warning Message: " + warning.getMessage()+ "\n\n" +
                         "SQLStade: " + warning.getSQLState()+ "\n\n" +
-                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "AA Control - Warning", JOptionPane.WARNING_MESSAGE);
+                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "MF Control - Warning", JOptionPane.WARNING_MESSAGE);
             }
             rs.close();
             cs.close();
@@ -67,7 +67,7 @@ public class LD_Statistics {
         } 
         catch (SQLException ex) 
         {
-            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "AA Control - SQLException", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "MF Control - SQLException", JOptionPane.WARNING_MESSAGE);
         }
     }
     
@@ -94,7 +94,7 @@ public class LD_Statistics {
                 JOptionPane.showMessageDialog(null, 
                         "Warning Message: " + warning.getMessage()+ "\n\n" +
                         "SQLStade: " + warning.getSQLState()+ "\n\n" +
-                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "AA Control - Warning", JOptionPane.WARNING_MESSAGE);
+                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "MF Control - Warning", JOptionPane.WARNING_MESSAGE);
             }
             rs.close();
             cs.close();
@@ -102,7 +102,7 @@ public class LD_Statistics {
         } 
         catch (SQLException ex) 
         {
-            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "AA Control - SQLException", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "MF Control - SQLException", JOptionPane.WARNING_MESSAGE);
         }
     }
     
@@ -129,7 +129,7 @@ public class LD_Statistics {
                 JOptionPane.showMessageDialog(null, 
                         "Warning Message: " + warning.getMessage()+ "\n\n" +
                         "SQLStade: " + warning.getSQLState()+ "\n\n" +
-                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "AA Control - Warning", JOptionPane.WARNING_MESSAGE);
+                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "MF Control - Warning", JOptionPane.WARNING_MESSAGE);
             }
             rs.close();
             cs.close();
@@ -137,7 +137,7 @@ public class LD_Statistics {
         } 
         catch (SQLException ex) 
         {
-            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "AA Control - SQLException", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "MF Control - SQLException", JOptionPane.WARNING_MESSAGE);
         }
     }
     
@@ -164,7 +164,7 @@ public class LD_Statistics {
                 JOptionPane.showMessageDialog(null, 
                         "Warning Message: " + warning.getMessage()+ "\n\n" +
                         "SQLStade: " + warning.getSQLState()+ "\n\n" +
-                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "AA Control - Warning", JOptionPane.WARNING_MESSAGE);
+                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "MF Control - Warning", JOptionPane.WARNING_MESSAGE);
             }
             rs.close();
             cs.close();
@@ -172,7 +172,7 @@ public class LD_Statistics {
         } 
         catch (SQLException ex) 
         {
-            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "AA Control - SQLException", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "MF Control - SQLException", JOptionPane.WARNING_MESSAGE);
         }
     }
     
@@ -199,7 +199,7 @@ public class LD_Statistics {
                 JOptionPane.showMessageDialog(null, 
                         "Warning Message: " + warning.getMessage()+ "\n\n" +
                         "SQLStade: " + warning.getSQLState()+ "\n\n" +
-                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "AA Control - Warning", JOptionPane.WARNING_MESSAGE);
+                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "MF Control - Warning", JOptionPane.WARNING_MESSAGE);
             }
             rs.close();
             cs.close();
@@ -207,7 +207,7 @@ public class LD_Statistics {
         } 
         catch (SQLException ex) 
         {
-            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "AA Control - SQLException", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "MF Control - SQLException", JOptionPane.WARNING_MESSAGE);
         }
     }
     
@@ -234,7 +234,7 @@ public class LD_Statistics {
                 JOptionPane.showMessageDialog(null, 
                         "Warning Message: " + warning.getMessage()+ "\n\n" +
                         "SQLStade: " + warning.getSQLState()+ "\n\n" +
-                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "AA Control - Warning", JOptionPane.WARNING_MESSAGE);
+                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "MF Control - Warning", JOptionPane.WARNING_MESSAGE);
             }
             rs.close();
             cs.close();
@@ -242,7 +242,42 @@ public class LD_Statistics {
         } 
         catch (SQLException ex) 
         {
-            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "AA Control - SQLException", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "MF Control - SQLException", JOptionPane.WARNING_MESSAGE);
+        }
+    }
+    
+    public void DashboardData_InscribedPastor(JLabel jLabel_InscribedPastor)
+    {
+        try 
+        {
+            Connection acceDB = ConnectionSQLSERVER.getConexion();
+            //Crear la operacion de listar
+            CallableStatement cs = acceDB.prepareCall("{call MF_DashboardStatisitcs_InscribedPastor()}");
+
+            //Devolver los registros
+            ResultSet rs = cs.executeQuery();
+            //Mientras hayan registros por leer
+            while(rs.next())
+            {
+                jLabel_InscribedPastor.setText(String.valueOf(rs.getDouble("Quantity")));
+            }
+            
+            SQLWarning warning = rs.getWarnings();
+            //Capture SQLWarning
+            while (warning != null) 
+            {                
+                JOptionPane.showMessageDialog(null, 
+                        "Warning Message: " + warning.getMessage()+ "\n\n" +
+                        "SQLStade: " + warning.getSQLState()+ "\n\n" +
+                        "Vendor Error Code: " + warning.getErrorCode() + "\n\n", "MF Control - Warning", JOptionPane.WARNING_MESSAGE);
+            }
+            rs.close();
+            cs.close();
+            acceDB.close();
+        } 
+        catch (SQLException ex) 
+        {
+            JOptionPane.showMessageDialog(null, ex.getErrorCode() + "\n\n" + ex.getMessage(), "MF Control - SQLException", JOptionPane.WARNING_MESSAGE);
         }
     }
 }

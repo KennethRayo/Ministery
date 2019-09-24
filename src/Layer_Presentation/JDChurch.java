@@ -62,7 +62,6 @@ public class JDChurch extends java.awt.Dialog {
         jSeparator5 = new javax.swing.JSeparator();
         jLabel14 = new javax.swing.JLabel();
         jSeparator13 = new javax.swing.JSeparator();
-        jTextField_IDChurch = new javax.swing.JTextField();
         jSpinner_Length = new javax.swing.JSpinner();
         jLabel15 = new javax.swing.JLabel();
         jTextField_String = new javax.swing.JTextField();
@@ -76,6 +75,7 @@ public class JDChurch extends java.awt.Dialog {
         jComboBox_ID_District = new javax.swing.JComboBox<>();
         jSeparator23 = new javax.swing.JSeparator();
         jLabel_IDDistrict = new javax.swing.JLabel();
+        jTextField_IDChurch = new javax.swing.JTextField();
         jButton_Save = new javax.swing.JButton();
         jPanel_Sidebar = new javax.swing.JPanel();
         jLabel_Close = new javax.swing.JLabel();
@@ -89,13 +89,9 @@ public class JDChurch extends java.awt.Dialog {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(240, 240, 240));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jTabbedPane3.setBackground(new java.awt.Color(240, 240, 240));
         jTabbedPane3.setForeground(new java.awt.Color(0, 0, 0));
-
-        jPanel3.setBackground(new java.awt.Color(240, 240, 240));
 
         jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(119, 123, 125));
@@ -108,17 +104,6 @@ public class JDChurch extends java.awt.Dialog {
         jLabel14.setText("Length");
 
         jSeparator13.setBackground(new java.awt.Color(26, 97, 186));
-
-        jTextField_IDChurch.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField_IDChurch.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jTextField_IDChurch.setForeground(new java.awt.Color(105, 105, 105));
-        jTextField_IDChurch.setBorder(null);
-        jTextField_IDChurch.setMaximumSize(new java.awt.Dimension(0, 19));
-        jTextField_IDChurch.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                jTextField_IDChurchKeyTyped(evt);
-            }
-        });
 
         jSpinner_Length.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jSpinner_Length.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -198,6 +183,17 @@ public class JDChurch extends java.awt.Dialog {
         jLabel_IDDistrict.setForeground(new java.awt.Color(105, 105, 105));
         jLabel_IDDistrict.setText("ID");
 
+        jTextField_IDChurch.setBackground(new java.awt.Color(240, 240, 240));
+        jTextField_IDChurch.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jTextField_IDChurch.setForeground(new java.awt.Color(105, 105, 105));
+        jTextField_IDChurch.setBorder(null);
+        jTextField_IDChurch.setMaximumSize(new java.awt.Dimension(0, 19));
+        jTextField_IDChurch.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextField_IDChurchKeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -208,7 +204,6 @@ public class JDChurch extends java.awt.Dialog {
                     .addComponent(jSeparator13)
                     .addComponent(jLabel6)
                     .addComponent(jSeparator5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField_IDChurch, javax.swing.GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jSpinner_Length, javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,7 +213,8 @@ public class JDChurch extends java.awt.Dialog {
                             .addComponent(jTextField_String, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))))
+                                .addGap(0, 85, Short.MAX_VALUE))))
+                    .addComponent(jTextField_IDChurch, javax.swing.GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE))
                 .addGap(45, 45, 45)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField_SearchDistrict, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -482,11 +478,6 @@ public class JDChurch extends java.awt.Dialog {
 
     }//GEN-LAST:event_jSpinner_LengthStateChanged
 
-    private void jTextField_IDChurchKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_IDChurchKeyTyped
-        // TODO add your handling code here:
-        LBKE.CharactersMayusAndCharactersMin(evt);
-    }//GEN-LAST:event_jTextField_IDChurchKeyTyped
-
     private void jTextField_NameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_NameKeyTyped
         // TODO add your handling code here:
         LBKE.CharactersMayusAndCharactersMin(evt);
@@ -506,6 +497,11 @@ public class JDChurch extends java.awt.Dialog {
         // TODO add your handling code here:
         GetDataDistrict();
     }//GEN-LAST:event_jComboBox_ID_DistrictItemStateChanged
+
+    private void jTextField_IDChurchKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_IDChurchKeyTyped
+        // TODO add your handling code here:
+        LBKE.CharactersMayusAndCharactersMin(evt);
+    }//GEN-LAST:event_jTextField_IDChurchKeyTyped
 
     /**
      * @param args the command line arguments
@@ -545,11 +541,11 @@ public class JDChurch extends java.awt.Dialog {
     private javax.swing.JSeparator jSeparator27;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
-    private javax.swing.JSpinner jSpinner_Length;
+    public javax.swing.JSpinner jSpinner_Length;
     private javax.swing.JTabbedPane jTabbedPane3;
-    private javax.swing.JTextField jTextField_IDChurch;
+    public javax.swing.JTextField jTextField_IDChurch;
     public javax.swing.JTextField jTextField_Name;
     public javax.swing.JTextField jTextField_SearchDistrict;
-    private javax.swing.JTextField jTextField_String;
+    public javax.swing.JTextField jTextField_String;
     // End of variables declaration//GEN-END:variables
 }

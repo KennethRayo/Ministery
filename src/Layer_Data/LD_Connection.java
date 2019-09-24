@@ -17,7 +17,7 @@ public class LD_Connection
 {
   
     
-    private final String URL = "jdbc:mysql://192.168.1.3:3306/"; // Ubicación de la BD.
+    private final String URL = "jdbc:mysql://127.0.0.1:3306/"; // Ubicación de la BD.
     private final String BD = "ministery"; // Nombre de la BD.
     private final String TZONE = "?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private final String USER = "KGRSystems";

@@ -397,7 +397,7 @@ public class JDPerson extends java.awt.Dialog {
 
     private void jLabel_CloseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_CloseMouseClicked
         // TODO add your handling code here:
-        JFManagePerson viewR = new JFManagePerson();
+        JFManagePersons viewR = new JFManagePersons();
 
         //Mostrar vista Principal
         viewR.setLocationRelativeTo(null);
