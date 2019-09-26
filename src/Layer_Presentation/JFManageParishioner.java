@@ -122,10 +122,8 @@ public class JFManageParishioner extends javax.swing.JFrame {
 
         getContentPane().add(jPanel_Sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, -1));
 
-        jPanel1.setBackground(new java.awt.Color(240, 240, 240));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(240, 240, 240));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("CONSULTAR"));
         jPanel2.setForeground(new java.awt.Color(60, 63, 65));
 
@@ -166,12 +164,10 @@ public class JFManageParishioner extends javax.swing.JFrame {
                 .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(240, 240, 240));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("ACTUALIZAR"));
         jPanel3.setForeground(new java.awt.Color(60, 63, 65));
 
         jTextField_ID.setEditable(false);
-        jTextField_ID.setBackground(new java.awt.Color(240, 240, 240));
         jTextField_ID.setBorder(null);
 
         jButton_Update.setBackground(new java.awt.Color(81, 172, 186));
@@ -214,7 +210,6 @@ public class JFManageParishioner extends javax.swing.JFrame {
                 .addGap(38, 38, 38))
         );
 
-        jPanel4.setBackground(new java.awt.Color(240, 240, 240));
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("REGISTRAR"));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8_add_rule_25px.png"))); // NOI18N
@@ -251,7 +246,6 @@ public class JFManageParishioner extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel5.setBackground(new java.awt.Color(240, 240, 240));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("ELIMINAR"));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8_delete_25px_1.png"))); // NOI18N
@@ -292,13 +286,13 @@ public class JFManageParishioner extends javax.swing.JFrame {
         jTable_Parishioner.setForeground(new java.awt.Color(0, 0, 0));
         jTable_Parishioner.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "ID", "Status", "Church", "Reservation"
+                "ID", "Status", "Church", "PaymentStatus", "DateReservation"
             }
         ));
         jScrollPane1.setViewportView(jTable_Parishioner);

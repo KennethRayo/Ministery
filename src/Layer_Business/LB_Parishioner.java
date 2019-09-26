@@ -81,10 +81,10 @@ public class LB_Parishioner extends LB_Person {
         //Agregar al modelo las 17 columnas
         modeloT.addColumn("ID");
         modeloT.addColumn("Name");
-        modeloT.addColumn("Status");
         modeloT.addColumn("Church");
         modeloT.addColumn("FoodPreference");
-        modeloT.addColumn("Reservation");
+        modeloT.addColumn("Payment Status");
+        modeloT.addColumn("Reservation Date");
         Object[] columna = new Object[6];
         
         //numero de registros recuperado desde la db
@@ -94,10 +94,10 @@ public class LB_Parishioner extends LB_Person {
         {
             columna[0] = LD.List().get(i).getID_Person();
             columna[1] = LD.List().get(i).getName_person();
-            columna[2] = LD.List().get(i).getStatus_Parishioner();
-            columna[3] = LD.List().get(i).getID_Church();
-            columna[4] = LD.List().get(i).getFood_Preference_person();
-            columna[5] = LD.List().get(i).getID_reservation();
+            columna[2] = LD.List().get(i).getID_Church();
+            columna[3] = LD.List().get(i).getFood_Preference_person();
+            columna[4] = LD.List().get(i).getID_reservation();
+            columna[5] = LD.List().get(i).getStatus_Parishioner();
             modeloT.addRow(columna);
         }
     }
@@ -134,10 +134,10 @@ public class LB_Parishioner extends LB_Person {
         //Agregar al modelo las 20 columnas
         modeloT.addColumn("ID");
         modeloT.addColumn("Name");
-        modeloT.addColumn("Status");
         modeloT.addColumn("Church");
         modeloT.addColumn("FoodPreference");
-        modeloT.addColumn("Reservation");
+        modeloT.addColumn("Payment Status");
+        modeloT.addColumn("Reservation Date");
         Object[] columna = new Object[6];
 
         //numero de registros recuperado desde la db
@@ -147,10 +147,10 @@ public class LB_Parishioner extends LB_Person {
         {
             columna[0] = LD.Seacrh(Parameters).get(i).getID_Person();
             columna[1] = LD.Seacrh(Parameters).get(i).getName_person();
-            columna[2] = LD.Seacrh(Parameters).get(i).getStatus_Parishioner();
-            columna[3] = LD.Seacrh(Parameters).get(i).getID_Church();
-            columna[4] = LD.Seacrh(Parameters).get(i).getFood_Preference_person();
-            columna[5] = LD.Seacrh(Parameters).get(i).getID_reservation();
+            columna[2] = LD.Seacrh(Parameters).get(i).getID_Church();
+            columna[3] = LD.Seacrh(Parameters).get(i).getFood_Preference_person();
+            columna[4] = LD.Seacrh(Parameters).get(i).getID_reservation();
+            columna[5] = LD.Seacrh(Parameters).get(i).getStatus_Parishioner();
             modeloT.addRow(columna);
         }
     }

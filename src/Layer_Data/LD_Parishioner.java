@@ -6,6 +6,8 @@
 package Layer_Data;
 
 import Layer_Business.LB_Parishioner;
+import Layer_Business.LB_Pastor;
+import Layer_Business.LB_Person;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -122,7 +124,7 @@ public class LD_Parishioner {
         /*Importar
         -click derecho
         -Fix imports (Ctrl+Shift+l)*/
-        LB_Parishioner obj;//objeto (clase) de tipo persona
+        LB_Parishioner obj;//objeto (clase) de tipo feligres
         try 
         {
             Connection acceDB = ConnectionSQLSERVER.getConexion();
@@ -139,10 +141,10 @@ public class LD_Parishioner {
                 //llenar los atributos con el objeto
                 obj.setID_Person(rs.getString(1));
                 obj.setName_person(rs.getString(2));
-                obj.setStatus_Parishioner(rs.getString(3));
-                obj.setID_Church(rs.getString(4));
-                obj.setFood_Preference_person(rs.getString(5));
-                obj.setID_reservation(rs.getString(6));
+                obj.setID_Church(rs.getString(3));
+                obj.setFood_Preference_person(rs.getString(4));
+                obj.setID_reservation(rs.getString(5));
+                obj.setStatus_Parishioner(rs.getString(6));
                 //Agregar a  la lista el objeto
                 list.add(obj);
             }
@@ -283,10 +285,10 @@ public class LD_Parishioner {
                 obj = new LB_Parishioner();
                 obj.setID_Person(rs.getString(1));
                 obj.setName_person(rs.getString(2));
-                obj.setStatus_Parishioner(rs.getString(3));
-                obj.setID_Church(rs.getString(4));
-                obj.setFood_Preference_person(rs.getString(5));
-                obj.setID_reservation(rs.getString(6));
+                obj.setID_Church(rs.getString(3));
+                obj.setFood_Preference_person(rs.getString(4));
+                obj.setID_reservation(rs.getString(5));
+                obj.setStatus_Parishioner(rs.getString(6));
                 //Agregar a  la lista el objeto
                 list.add(obj);
             }

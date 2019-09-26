@@ -9,6 +9,7 @@ import Layer_Business.LB_IDGenerator;
 import Layer_Business.LB_KeyEvent;
 import Layer_Business.LB_Reservation;
 import java.text.SimpleDateFormat;
+import java.util.TimeZone;
 import javax.swing.JOptionPane;
 
 /**
@@ -77,13 +78,9 @@ public class JDReservation extends java.awt.Dialog {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(240, 240, 240));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jTabbedPane3.setBackground(new java.awt.Color(240, 240, 240));
         jTabbedPane3.setForeground(new java.awt.Color(0, 0, 0));
-
-        jPanel3.setBackground(new java.awt.Color(240, 240, 240));
 
         jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(119, 123, 125));
@@ -126,7 +123,6 @@ public class JDReservation extends java.awt.Dialog {
         });
 
         jTextField_IDReservation.setEditable(false);
-        jTextField_IDReservation.setBackground(new java.awt.Color(240, 240, 240));
         jTextField_IDReservation.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jTextField_IDReservation.setForeground(new java.awt.Color(105, 105, 105));
         jTextField_IDReservation.setBorder(null);
@@ -137,15 +133,12 @@ public class JDReservation extends java.awt.Dialog {
             }
         });
 
-        jPanel_OpeningDate.setBackground(new java.awt.Color(240, 240, 240));
-
         jLabel24.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(119, 123, 125));
         jLabel24.setText("DateAndTime");
 
-        jDateChooser_DateAndTime.setBackground(new java.awt.Color(240, 240, 240));
         jDateChooser_DateAndTime.setForeground(new java.awt.Color(105, 105, 105));
-        jDateChooser_DateAndTime.setDateFormatString("d MMM y - hh:mm:ss");
+        jDateChooser_DateAndTime.setDateFormatString("d MMM y - kk:mm:ss ");
         jDateChooser_DateAndTime.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
 
         jSeparator23.setBackground(new java.awt.Color(26, 97, 186));
@@ -405,8 +398,10 @@ public class JDReservation extends java.awt.Dialog {
                         
                         String PaymentStatus = jComboBox_PaymentStatus.getSelectedItem().toString();
                         String Payment = jTextField_Payment.getText();
-
-                        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd - hh:mm:ss");
+                        TimeZone zone = TimeZone.getTimeZone("America/El_Salvador");
+                        
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd - kk:mm:ss");
+                        dateFormat.setTimeZone(TimeZone.getTimeZone("America/El_Salvador"));
                         String DateAndTime = dateFormat.format(jDateChooser_DateAndTime.getDate());
 
                         if (Actualizar == true)
