@@ -82,7 +82,7 @@ public class LB_Parishioner extends LB_Person {
         modeloT.addColumn("ID");
         modeloT.addColumn("Name");
         modeloT.addColumn("Church");
-        modeloT.addColumn("FoodPreference");
+        modeloT.addColumn("District");
         modeloT.addColumn("Payment Status");
         modeloT.addColumn("Reservation Date");
         Object[] columna = new Object[6];
@@ -135,7 +135,7 @@ public class LB_Parishioner extends LB_Person {
         modeloT.addColumn("ID");
         modeloT.addColumn("Name");
         modeloT.addColumn("Church");
-        modeloT.addColumn("FoodPreference");
+        modeloT.addColumn("District");
         modeloT.addColumn("Payment Status");
         modeloT.addColumn("Reservation Date");
         Object[] columna = new Object[6];

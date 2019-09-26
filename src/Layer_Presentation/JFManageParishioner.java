@@ -286,13 +286,13 @@ public class JFManageParishioner extends javax.swing.JFrame {
         jTable_Parishioner.setForeground(new java.awt.Color(0, 0, 0));
         jTable_Parishioner.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "ID", "Status", "Church", "PaymentStatus", "DateReservation"
+                "ID", "Status", "Church", "District", "Payment Status", "DateReservation"
             }
         ));
         jScrollPane1.setViewportView(jTable_Parishioner);
