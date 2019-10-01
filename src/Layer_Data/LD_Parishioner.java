@@ -139,12 +139,13 @@ public class LD_Parishioner {
                 //instanciar al objeto de tipo persona
                 obj = new LB_Parishioner();
                 //llenar los atributos con el objeto
-                obj.setID_Person(rs.getString(1));
-                obj.setName_person(rs.getString(2));
-                obj.setID_Church(rs.getString(3));
-                obj.setFood_Preference_person(rs.getString(4));
-                obj.setID_reservation(rs.getString(5));
-                obj.setStatus_Parishioner(rs.getString(6));
+                obj.setNum_row(rs.getString(1));
+                obj.setID_Person(rs.getString(2));
+                obj.setName_person(rs.getString(3));
+                obj.setID_Church(rs.getString(4));
+                obj.setFood_Preference_person(rs.getString(5));
+                obj.setID_reservation(rs.getString(6));
+                obj.setStatus_Parishioner(rs.getString(7));
                 //Agregar a  la lista el objeto
                 list.add(obj);
             }
@@ -283,12 +284,13 @@ public class LD_Parishioner {
             while(rs.next())
             {
                 obj = new LB_Parishioner();
-                obj.setID_Person(rs.getString(1));
-                obj.setName_person(rs.getString(2));
-                obj.setID_Church(rs.getString(3));
-                obj.setFood_Preference_person(rs.getString(4));
-                obj.setID_reservation(rs.getString(5));
-                obj.setStatus_Parishioner(rs.getString(6));
+                obj.setNum_row(rs.getString(1));
+                obj.setID_Person(rs.getString(2));
+                obj.setName_person(rs.getString(3));
+                obj.setID_Church(rs.getString(4));
+                obj.setFood_Preference_person(rs.getString(5));
+                obj.setID_reservation(rs.getString(6));
+                obj.setStatus_Parishioner(rs.getString(7));
                 //Agregar a  la lista el objeto
                 list.add(obj);
             }

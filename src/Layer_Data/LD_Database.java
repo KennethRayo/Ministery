@@ -43,7 +43,7 @@ public class LD_Database {
                 9. Nuevo
                 10. Agregar ruta donde esta mysql -- C:\Program Files\MariaDB 10.3\bin
                 KGRSystems@localhost*/
-                Process p = Runtime.getRuntime().exec(URL_MySQLDump +"\\mysqldump -u "+ConnectionSQLSERVER.getUs()+" -p"+ ConnectionSQLSERVER.getPass()+" "+ConnectionSQLSERVER.getBd()+"");
+                Process p = Runtime.getRuntime().exec(URL_MySQLDump + System.getProperty("file.separator") + "mysqldump -u "+ConnectionSQLSERVER.getUs()+" -p"+ ConnectionSQLSERVER.getPass()+" "+ConnectionSQLSERVER.getBd()+"");
             
                 InputStream is = p.getInputStream();
 

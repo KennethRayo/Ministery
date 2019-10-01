@@ -86,7 +86,7 @@ public class JFManageParishioner extends javax.swing.JFrame {
         });
 
         jLabel_Close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/left_15px.png"))); // NOI18N
-        jLabel_Close.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel_Close.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel_Close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel_CloseMouseClicked(evt);
@@ -174,7 +174,7 @@ public class JFManageParishioner extends javax.swing.JFrame {
         jButton_Update.setForeground(new java.awt.Color(255, 255, 255));
         jButton_Update.setText("U");
         jButton_Update.setBorder(null);
-        jButton_Update.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Update.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton_Update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_UpdateActionPerformed(evt);
@@ -218,7 +218,7 @@ public class JFManageParishioner extends javax.swing.JFrame {
         jButton_Registry.setForeground(new java.awt.Color(255, 255, 255));
         jButton_Registry.setText("R");
         jButton_Registry.setBorder(null);
-        jButton_Registry.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Registry.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton_Registry.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_RegistryActionPerformed(evt);
@@ -254,7 +254,7 @@ public class JFManageParishioner extends javax.swing.JFrame {
         jButton_Delete.setForeground(new java.awt.Color(255, 255, 255));
         jButton_Delete.setText("D");
         jButton_Delete.setBorder(null);
-        jButton_Delete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Delete.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton_Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_DeleteActionPerformed(evt);
@@ -286,13 +286,13 @@ public class JFManageParishioner extends javax.swing.JFrame {
         jTable_Parishioner.setForeground(new java.awt.Color(0, 0, 0));
         jTable_Parishioner.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "ID", "Status", "Church", "District", "Payment Status", "DateReservation"
+                "#", "ID", "Status", "Church", "District", "Payment Status", "DateReservation"
             }
         ));
         jScrollPane1.setViewportView(jTable_Parishioner);

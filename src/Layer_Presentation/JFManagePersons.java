@@ -79,7 +79,7 @@ public class JFManagePersons extends javax.swing.JFrame {
         });
 
         jLabel_Close.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/left_15px.png"))); // NOI18N
-        jLabel_Close.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel_Close.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel_Close.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel_CloseMouseClicked(evt);
@@ -131,7 +131,7 @@ public class JFManagePersons extends javax.swing.JFrame {
 
         jSeparator5.setBackground(new java.awt.Color(29, 34, 39));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8_Search_25px.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/icons8_search_25px.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -172,7 +172,7 @@ public class JFManagePersons extends javax.swing.JFrame {
         jButton_Update.setForeground(new java.awt.Color(255, 255, 255));
         jButton_Update.setText("U");
         jButton_Update.setBorder(null);
-        jButton_Update.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Update.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton_Update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_UpdateActionPerformed(evt);
@@ -219,7 +219,7 @@ public class JFManagePersons extends javax.swing.JFrame {
         jButton_Registry.setForeground(new java.awt.Color(255, 255, 255));
         jButton_Registry.setText("R");
         jButton_Registry.setBorder(null);
-        jButton_Registry.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Registry.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton_Registry.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_RegistryActionPerformed(evt);
@@ -258,7 +258,7 @@ public class JFManagePersons extends javax.swing.JFrame {
         jButton_Delete.setForeground(new java.awt.Color(255, 255, 255));
         jButton_Delete.setText("D");
         jButton_Delete.setBorder(null);
-        jButton_Delete.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Delete.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton_Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton_DeleteActionPerformed(evt);

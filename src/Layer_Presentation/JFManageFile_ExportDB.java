@@ -319,6 +319,7 @@ public class JFManageFile_ExportDB extends javax.swing.JFrame {
         ch.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         int se = ch.showSaveDialog(null);
         if(se == JFileChooser.APPROVE_OPTION){
+           
             String ruta = ch.getSelectedFile().getPath();
             jTextField_URL.setText(ruta);
         }
@@ -341,7 +342,7 @@ public class JFManageFile_ExportDB extends javax.swing.JFrame {
     private void jButton_ExportDBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ExportDBActionPerformed
         String URL = jTextField_URL.getText();
         String URL_MySQLDump = jTextField_URL_MySQLDump.getText();
-        String Name = "\\" + GetDateTime() + ".sql";
+        String Name = System.getProperty("file.separator") + GetDateTime() + ".sql";
       
         
         if (jCheckBox_LocalizeMysqldump.isSelected())
@@ -369,6 +370,7 @@ public class JFManageFile_ExportDB extends javax.swing.JFrame {
         {
             if (!"".equals(jTextField_URL.getText()))
             {
+                //URL_MySQLDump = "C:\\Program Files\\MariaDB 10.4\\bin\\";
                 URL_MySQLDump = "C:\\Program Files\\MariaDB 10.4\\bin\\";
                 Response = LB.ExportDB(URL_MySQLDump, URL, Name);
                 JOptionPane.showMessageDialog(null, "File: " + Name + "\n" + "Created on: " + URL, "MF Control - Export DB", JOptionPane.INFORMATION_MESSAGE);
@@ -383,6 +385,8 @@ public class JFManageFile_ExportDB extends javax.swing.JFrame {
 
     private void jButton_SearchMysqldumpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SearchMysqldumpActionPerformed
         // TODO add your handling code here:
+        StringBuilder builder = new StringBuilder();
+        
         JFileChooser ch = new JFileChooser();
         ch.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         int se = ch.showSaveDialog(null);
